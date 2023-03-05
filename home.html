@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>SISCOM</title>
+    <title>Yard Sale</title>
     <style>
         :root {
         --very-light-pink: #C7C7C7;
@@ -29,11 +29,31 @@
         .cards-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, 240px);
-
+            place-content: center;
+            gap: 28px;
         }
 
         .product-card {
             width: 240px;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .product-info div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 16px;
+            margin-bottom: 4px;
+        }
+
+        .product-info div p:nth-child(2){
+            font-size: var(--sm);
+            margin: 0;
         }
 
         .product-img {
@@ -41,9 +61,15 @@
             height: 240px;
             border-radius: 20px;
             object-fit: cover;
+            color: var(--very-light-pink);
         }
-        .bi {
-            color: #000000;
+
+        @media (max-width: 640px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 140px);
+                gap: 28px;
+            }
         }
     </style>
 </head>
@@ -52,51 +78,83 @@
         <div class="cards-container">
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
                     <i class="bi bi-cart-check"></i>
                 </div>
             </div>
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
+                    <i class="bi bi-cart-check"></i>
                 </div>
-                <i class="bi bi-cart-check"></i>
             </div>
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
+                    <i class="bi bi-cart-check"></i>
                 </div>
-                <i class="bi bi-cart-check"></i>
             </div>
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
+                    <i class="bi bi-cart-check"></i>
                 </div>
-                <i class="bi bi-cart-check"></i>
             </div>
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
+                    <i class="bi bi-cart-check"></i>
                 </div>
-                <i class="bi bi-cart-check"></i>
             </div>
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
+                    <i class="bi bi-cart-check"></i>
                 </div>
-                <i class="bi bi-cart-check"></i>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
+                    <i class="bi bi-cart-check"></i>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bike" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+                    </div>
+                    <i class="bi bi-cart-check"></i>
+                </div>
             </div>
         </div>
     </section>
