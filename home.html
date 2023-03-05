@@ -41,14 +41,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 12px;
+            margin-top: 6px;
         }
 
         .product-info div p:nth-child(1){
             font-weight: bold;
             font-size: var(--md);
-            margin-top: 16px;
-            margin-bottom: 4px;
+            margin-top: 0;
         }
 
         .product-info div p:nth-child(2){
@@ -64,11 +63,21 @@
             color: var(--very-light-pink);
         }
 
+        .bi {
+            color: var(--hospital-green);
+            font-size: 1.5rem;
+        }
+
         @media (max-width: 640px) {
             .cards-container {
-                display: grid;
                 grid-template-columns: repeat(auto-fill, 140px);
-                gap: 28px;
+            }
+            .product-card {
+                width: 140px;
+            }
+            .product-img {
+                width: 140px;
+                height: 140px;
             }
         }
     </style>
