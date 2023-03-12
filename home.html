@@ -12,7 +12,7 @@
         :root {
         --very-light-pink: #C7C7C7;
         --white: #FFFFFF;
-        --text-input-field: #F7F7F7;
+        --text-input-field: rgb(38, 38, 38);
         --black: #000000;
         --hospital-green: #ACD9B2;
         --dark: #232830;
@@ -24,6 +24,7 @@
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
+            background-color: rgb(48, 48, 48);
         }
 
         .cards-container {
@@ -44,6 +45,14 @@
             margin-top: 6px;
         }
 
+        .product-img {
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+            color: var(--very-light-pink);
+        }
+
         .product-info div p:nth-child(1){
             font-weight: bold;
             font-size: var(--md);
@@ -55,14 +64,6 @@
             margin: 0;
         }
 
-        .product-img {
-            width: 100%;
-            height: 240px;
-            border-radius: 20px;
-            object-fit: cover;
-            color: var(--very-light-pink);
-        }
-
         .bi {
             color: var(--hospital-green);
             font-size: 1.5rem;
@@ -72,9 +73,11 @@
             .cards-container {
                 grid-template-columns: repeat(auto-fill, 140px);
             }
+
             .product-card {
                 width: 140px;
             }
+
             .product-img {
                 width: 140px;
                 height: 140px;

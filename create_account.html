@@ -11,7 +11,7 @@
         :root {
         --very-light-pink: #C7C7C7;
         --white: #FFFFFF;
-        --text-input-field: #F7F7F7;
+        --text-input-field: rgb(38, 38, 38);
         --black: #000000;
         --hospital-green: #ACD9B2;
         --dark: #232830;
@@ -23,6 +23,7 @@
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
+            background-color: rgb(48, 48, 48);
         }
 
         .login {
@@ -51,14 +52,6 @@
             text-align: center;
             font-size: var(--lg);
             font-weight: 900;
-        }
-
-        .subtitle {
-            margin-top: 0;
-            text-align: center;
-
-            font-size: var(--md);
-            color: var(--dark);
         }
 
         .label {
@@ -108,6 +101,7 @@
             .form-container {
                 height: 100%;
             }
+
             .form {
                 height: 100%;
                 justify-content: space-between;
@@ -132,7 +126,7 @@
                         <label for="password" class="label">Password</label>
                         <input type="password" id="password" placeholder="**********" class="input input-password">
                     </div>
-                    <input type="submit" value="Create account" class="primary-button login-button">
+                    <input type="submit" value="Create account" class="primary-button">
                 </form>
             </div>
         </div>

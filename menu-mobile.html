@@ -11,7 +11,7 @@
         :root {
         --very-light-pink: #C7C7C7;
         --white: #FFFFFF;
-        --text-input-field: #F7F7F7;
+        --text-input-field: rgb(38, 38, 38);
         --black: #000000;
         --hospital-green: #ACD9B2;
         --dark: #232830;
@@ -23,12 +23,21 @@
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
+            background-color: rgb(48, 48, 48);
         }
 
         .mobile-menu {
             padding: 24px;
         }
 
+        .mobile-menu .sign-out {
+            color: var(--hospital-green);
+        }
+
+        .mobile-menu .email, .mobile-menu .sign-out {
+            font-size: var(--sm);
+            font-weight: 500;
+        }
         .mobile-menu a {
             text-decoration: none;
             color: var(--black);
@@ -43,15 +52,6 @@
 
         .mobile-menu ul li {
             margin-bottom: 14px;
-        }
-
-        .mobile-menu .email, .mobile-menu .sign-out {
-            font-size: var(--sm);
-            font-weight: 500;
-        }
-
-        .mobile-menu .sign-out {
-            color: var(--hospital-green);
         }
 
         .mobile-menu ul:nth-child(1), .mobile-menu ul:nth-child(2){

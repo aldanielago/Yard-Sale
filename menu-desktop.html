@@ -11,7 +11,7 @@
         :root {
         --very-light-pink: #C7C7C7;
         --white: #FFFFFF;
-        --text-input-field: #F7F7F7;
+        --text-input-field: rgb(38, 38, 38);
         --black: #000000;
         --hospital-green: #ACD9B2;
         --dark: #232830;
@@ -23,6 +23,7 @@
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
+            background-color: rgb(48, 48, 48);
         }
 
         .desktop-menu {
@@ -32,6 +33,11 @@
             padding: 14px 22px;
 
             border-radius: 6px;
+        }
+
+        .desktop-menu a {
+            color: var(--black);
+            text-decoration: none;
         }
 
         .desktop-menu ul {
@@ -55,11 +61,6 @@
         .desktop-menu ul li:last-child a{
             color: var(--hospital-green);
             font-size: var(--sm);
-        }
-
-        .desktop-menu a {
-            color: var(--black);
-            text-decoration: none;
         }
     </style>
 </head>
