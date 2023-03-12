@@ -1,6 +1,4 @@
-# Yard-SALE
-
-## Welcome to Yard Sale!
+# Welcome to Yard Sale!
 
 This is an educational project where I have created an online store applying many basic programming concepts. The main objective of this project is to learn programming and improve my skills in web development.
 
